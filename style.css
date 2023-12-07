@@ -1,0 +1,32 @@
+html{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    text-align: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    overflow: hidden;
+}
+/*Table style*/
+table{
+    height: 100%;
+    aspect-ratio: 5/8;
+    table-layout: fixed;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table>tbody>tr{
+    width: 100%;
+    aspect-ratio: 5;
+}
+table>tbody>tr>*{
+    width: 20%;
+    aspect-ratio: 1;
+}
