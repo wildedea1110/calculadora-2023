@@ -11,6 +11,8 @@ body{
     background-color: whitesmoke;
     height: 100vh;
     overflow: hidden;
+    padding: 0px;
+    margin: 0px;
 }
 /*Table style*/
 table{
@@ -21,6 +23,8 @@ table{
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
+    overflow: hidden;
+    padding: 0px;
 }
 table>tbody>tr{
     width: 100%;
@@ -29,4 +33,33 @@ table>tbody>tr{
 table>tbody>tr>*{
     width: 20%;
     aspect-ratio: 1;
+}
+/*Hightlighted items */
+table tr:first-child{
+    background-color: indigo;
+    color: white;
+}    
+table tr:first-child{
+    background-color: indigo;
+    color: white;
+}    
+table tr:not(:first-child, :last-child)>td:first-child{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+/* Sub itens */
+table tr>td>input{
+    font-size: 1.2em;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}    
+table tr>td>button{
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }

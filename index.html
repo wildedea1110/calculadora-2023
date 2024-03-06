@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora </title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <table>
@@ -59,8 +60,12 @@
                 <td></td>
             </tr>
             <tr>
-                <td colspan="3"><button>Calcular</button></td>
-                <td colspan="2"><button>Resetar</button></td>
+                <td colspan="3">
+                    <button onclick="setupAll()">Calcular</button>
+                </td>
+                <td colspan="2">
+                    <button onclick="window.location+=''">Resetar</button>
+                </td>
             </tr>
         </tbody>
     </table>
